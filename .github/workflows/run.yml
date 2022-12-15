@@ -5,6 +5,8 @@ on:
 
 jobs:
   run_py_script:
+    env:
+        MY_NAME: ${{ secrets.MY_NAME }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
