@@ -1,1 +1,1 @@
-my_name = ${{ secrets.MY_NAME }}
+my_name = "${{ secrets.MY_NAME }}"
