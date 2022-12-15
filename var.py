@@ -1,1 +1,2 @@
-my_name = "${{ secrets.MY_NAME }}"
+import os
+my_name = os.environ['MY_NAME']
