@@ -1,0 +1,15 @@
+name:Run py scripts
+on: push
+jobs:
+  run_py_script:
+    runs_on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: run execute py script
+      - uses: actions/setup-python@v4 
+        with:
+          python-version: 'pypy3.9' 
+      - name: run the python script
+        run: python my_script.py
+        
